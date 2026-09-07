@@ -2,34 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Message Spammer For Prank</title>
+  <title>Message Spammer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #121212;
+      background-color: black;
       color: #fff;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Comic Relief';
       text-align: center;
       padding: 30px;
     }
     input, button {
-      padding: 10px;
-      font-size: 16px;
+      font-family: 'Comic Relief';
+      padding: 20px;
+      font-size: 12px;
       margin: 10px;
-      border-radius: 6px;
+      border-radius: 18px;
       border: none;
     }
     input {
-      width: 300px;
+      width: 200px;
     }
     button {
+      
       background-color: #ff4757;
       color: white;
       cursor: pointer;
+      font-family: 'Comic Relief';
     }
     #output {
       margin-top: 30px;
       padding: 20px;
-      background: #1e1e1e;
+      background: #161616;
       border-radius: 10px;
       max-width: 700px;
       margin-left: auto;
@@ -39,16 +45,17 @@
       word-wrap: break-word;
       max-height: 400px;
       overflow-y: auto;
+      font-family: 'Comic Relief';
     }
   </style>
 </head>
 <body>
 
-  <h1>💣 Message Spammer For Prank</h1>
+  <h1>MessageSpammer</h1>
 
   <input type="text" id="message" placeholder="Enter your message"><br>
   <input type="number" id="count" placeholder="How many times?" min="1" max="1000"><br>
-  <button onclick="startSpamming()">Start Spam</button>
+  <button onclick="startSpamming()">Start</button>
   <button onclick="stopSpamming()">Stop</button>
 
   <div id="output" contenteditable="true"></div>
